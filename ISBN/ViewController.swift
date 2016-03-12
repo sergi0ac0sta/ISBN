@@ -73,8 +73,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return (bookTitle, bookAuthors, bookCover)
     }
     
-    var temp = ""
-    
     func search() {
         ISBN.resignFirstResponder()
         let url = NSURL(string: "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:" + ISBN.text!)
