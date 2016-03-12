@@ -120,7 +120,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             dispatch_sync(dispatch_get_main_queue()) {
                                 self.Results.text = "No hay resultados."
                                 self.imageView.image = nil
-                                self.noCoverLabel.hidden = false
+                                self.noCoverLabel.hidden = true
                                 self.indicator.stopAnimating()
                                 self.ISBN.userInteractionEnabled = true
                             }
